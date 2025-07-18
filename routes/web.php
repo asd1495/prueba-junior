@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 // --- Rutas para usuarios no autenticados ---
@@ -24,6 +25,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    //Perfil de usuario
+    Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
 });
 
 // --- Redirección base ---
