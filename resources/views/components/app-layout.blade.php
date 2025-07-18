@@ -33,6 +33,9 @@
                                 Dashboard
                             </a>
                             <!-- Enlaces a categorías y productos que se añadirán -->
+                            <a href="{{ route('categories') }}" class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition {{ request()->routeIs('categories') ? 'border-indigo-400 text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' }}">
+                                Categorías
+                            </a>
                         </div>
                     </div>
 
@@ -86,6 +89,9 @@
                 <div class="pt-2 pb-3 space-y-1">
                     <a href="{{ route('dashboard') }}" class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition {{ request()->routeIs('dashboard') ? 'border-indigo-400 text-indigo-700 bg-indigo-50' : 'border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300' }}">
                         Dashboard
+                    </a>
+                    <a href="{{ route('categories') }}" class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition {{ request()->routeIs('categories') ? 'border-indigo-400 text-indigo-700 bg-indigo-50' : 'border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300' }}">
+                        Categorías
                     </a>
                 </div>
 

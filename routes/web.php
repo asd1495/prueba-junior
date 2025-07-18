@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ProfileController;
+use App\Livewire\CategoryManager;
 use Illuminate\Support\Facades\Route;
 
 // --- Rutas para usuarios no autenticados ---
@@ -28,6 +29,9 @@ Route::middleware('auth')->group(function () {
 
     //Perfil de usuario
     Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
+
+    //Categorías
+    Route::get('/categories', CategoryManager::class)->middleware(['auth'])->name('categories');
 });
 
 // --- Redirección base ---
