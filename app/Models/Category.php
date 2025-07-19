@@ -19,4 +19,13 @@ class Category extends Model
         'description',
         'image',
     ];
+
+    /**
+     * Define la relación con Product.
+     * Una categoría tiene muchos productos.
+     */
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }

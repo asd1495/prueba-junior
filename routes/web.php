@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ProfileController;
 use App\Livewire\CategoryManager;
+use App\Livewire\ProductManager;
 use Illuminate\Support\Facades\Route;
 
 // --- Rutas para usuarios no autenticados ---
@@ -32,9 +33,17 @@ Route::middleware('auth')->group(function () {
 
     //Categorías
     Route::get('/categories', CategoryManager::class)->middleware(['auth'])->name('categories');
+
+    //Productos
+    Route::get('products', ProductManager::class)->name('products');
 });
 
 // --- Redirección base ---
 Route::get('/', function () {
-    return view('welcome');
+    if (Auth::check()) {
+        // Si el usuario ya ha iniciado sesión, lo redirige al dashboard.
+        return redirect()->route('dashboard');
+    }
+    // Si no ha iniciado sesión, lo redirige a la página de login.
+    return redirect()->route('login');
 });

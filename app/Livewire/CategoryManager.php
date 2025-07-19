@@ -23,11 +23,10 @@ class CategoryManager extends Component
 
     protected function rules()
     {
-        $imageRule = $this->categoryId ? 'nullable|image|max:1024' : 'required|image|max:1024';
         return [
             'name' => 'required|string|max:100',
             'description' => 'nullable|string',
-            'newImage' => $imageRule,
+            'newImage' => 'nullable|image|max:1024',
         ];
     }
 
