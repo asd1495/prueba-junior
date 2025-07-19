@@ -114,9 +114,9 @@ A continuación se listan las funcionalidades implementadas en el proyecto.
 -   [ ] **Perfil de Usuario:** Visualización de los datos básicos del usuario (nombre, email, fecha de registro).
 -   [ ] **Cierre de Sesión:** Invalidación de la sesión del usuario.
 
-###[Vista de login](./screenshots/login.png)
-###[Vista de registro](./screenshots/register.png)
-###[Vista de perfil](./screenshots/perfil.png)
+###[Screenshot de login](./screenshots/login.png)
+###[Screenshot de registro](./screenshots/register.png)
+###[Screenshot de perfil](./screenshots/perfil.png)
 
 ### 🛍️ Gestión de Categorías
 -   [ ] **Creación de Categoría:** Formulario para añadir una nueva categoría con nombre, descripción e imagen.
@@ -126,8 +126,8 @@ A continuación se listan las funcionalidades implementadas en el proyecto.
 -   [ ] **Notificaciones Visuales:** Mensajes de estado para confirmar acciones (crear, editar, eliminar).
 -   [ ] **Diseño Responsivo:** La lista se adapta a un formato de tarjetas en dispositivos móviles.
 
-###[Vista de categorías](./screenshots/categorias.png)
-###[Vista de creación de categorías](./screenshots/categorias2.png)
+###[Screenshot de categorías](./screenshots/categorias.png)
+###[Screenshot de creación de categorías](./screenshots/categorias2.png)
 
 ### 🛍️ Gestión de Productos
 -   [ ] **Creación de Producto:** Formulario para añadir un nuevo producto con todos sus campos.
@@ -136,13 +136,14 @@ A continuación se listan las funcionalidades implementadas en el proyecto.
 -   [ ] **Eliminación de Producto:** Borrado de un producto con diálogo de confirmación.
 -   [ ] **Tabla Ordenable:** Se puede hacer clic en las cabeceras de la tabla para ordenar los productos por nombre, categoría, precio o cantidad.
 
-###[Vista de productos](./screenshots/productos.png)
-###[Vista de creación de productos](./screenshots/productos2.png)
+###[Screenshot de productos](./screenshots/productos.png)
+###[Screenshot de creación de productos](./screenshots/productos2.png)
 
 ### 🖥️ Dashboard
 -   [ ] **Estadísticas Clave:** Tarjetas que muestran el total de productos, categorías e inventario.
 -   [ ] **Listas Dinámicas:** Secciones que muestran los productos añadidos recientemente y aquellos con bajo stock.
 
-###[Vista de dashboard](./screenshots/dashboard.png)
+###[Screenshot de dashboard](./screenshots/dashboard.png)
 
+### Video demo
 [![Mira el video de demostración](./screenshots/login.png)](https://drive.google.com/file/d/1q5rdzszzXGIj_W3m2Tuy8GCmpI5BL_Xn/view?usp=sharing)
